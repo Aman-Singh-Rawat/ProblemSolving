@@ -2,8 +2,10 @@ package main
 
 import collegewallah.lecturefifteen.printArray
 import collegewallah.lecturefifteen.smallestOrLargest
-import collegewallah.lecturesixteen.integerInArrayOrNot
-import collegewallah.lecturesixteen.secondLargest
+import collegewallah.lectureseventeen.reverseAnArray
+import collegewallah.lectureseventeen.rotateGivenArray
+import collegewallah.lectureseventeen.secondApproachRotate
+import collegewallah.lectureseventeen.thirdApproachRotate
 import collegewallah.lecturetennumbersystem.decimalToBinary
 import collegewallah.patternprinting.*
 
@@ -18,10 +20,10 @@ fun main() {
         print("Elements of Array[$i]:: ")
         arr[i] = readln().toIntOrNull() ?: 0
     }
-
-    //secondLargest(arr)
-
-    print("\nYour Answer is:: ${integerInArrayOrNot(arr)}")
+    //reverseAnArray(arr)
+    //rotateGivenArray(arr)
+    //secondApproachRotate(arr)
+    thirdApproachRotate(arr)
 }
 
 
@@ -36,7 +38,12 @@ fun main() {
 
 
 
+fun lectureSixteen() {
 
+    //secondLargest(arr)
+
+    //print("\nYour Answer is:: ${integerInArrayOrNot(arr)}")
+}
 fun lectureFifteen() {
     val arr = smallestOrLargest()
     printArray(arr)
