@@ -1,5 +1,8 @@
 package main
 
+import collegewallah.lectureeighteen.sortNonDecreasing
+import collegewallah.lectureeighteen.sortZeroOrOne
+import collegewallah.lectureeighteen.swapEvenOrOdd
 import collegewallah.lecturefifteen.printArray
 import collegewallah.lecturefifteen.smallestOrLargest
 import collegewallah.lectureseventeen.reverseAnArray
@@ -10,7 +13,6 @@ import collegewallah.lecturetennumbersystem.decimalToBinary
 import collegewallah.patternprinting.*
 
 fun main() {
-    //arrayManipulation()
     print("Enter the Size of Array:: ")
     val n = readln().toIntOrNull() ?: 0
 
@@ -20,10 +22,9 @@ fun main() {
         print("Elements of Array[$i]:: ")
         arr[i] = readln().toIntOrNull() ?: 0
     }
-    //reverseAnArray(arr)
-    //rotateGivenArray(arr)
-    //secondApproachRotate(arr)
-    thirdApproachRotate(arr)
+    //sortZeroOrOne(arr)
+    //swapEvenOrOdd(arr)
+    sortNonDecreasing(arr)
 }
 
 
@@ -36,7 +37,14 @@ fun main() {
 
 
 
+fun lectureSeventeen() {
 
+    //arrayManipulation()
+    //reverseAnArray(arr)
+    //rotateGivenArray(arr)
+    //secondApproachRotate(arr)
+    //thirdApproachRotate(arr)
+}
 
 fun lectureSixteen() {
 
